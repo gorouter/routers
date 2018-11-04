@@ -16,7 +16,7 @@ RUN apt-get update -y \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
    #&& rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-   #&& /sbin/install_clean
+   #&& /sbin/install_clean \
     
     && mkdir -p /home/LEDEWRT/tmp /root/R7800 \
     && mv /root/update_r7800.sh /root/R7800 \
