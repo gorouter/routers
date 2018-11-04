@@ -34,7 +34,7 @@ RUN dpkg --add-architecture i386 \
     && apt-get autoremove -y \
     && apt-get autoclean -y \
    #&& rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-   #&& /sbin/install_clean
+   #&& /sbin/install_clean \
     
     && mkdir -p /home/LEDEWRT/tmp /root/R7800 /root/.ssh \
     && mv /root/commit_r7800.sh /root/R7800 \
