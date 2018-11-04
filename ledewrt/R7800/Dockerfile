@@ -11,7 +11,9 @@ COPY config_all_r7800   /root/config_all_r7800
 COPY 4.4_qcom-ipq8065-r7800.dts /root/4.4_qcom-ipq8065-r7800.dts
 COPY 4.9_qcom-ipq8065-r7800.dts /root/4.9_qcom-ipq8065-r7800.dts
 
-RUN apt-get autoremove -y \
+RUN apt-get update -y \
+    && apt-get install -y --no-install-recommends telnet \
+    && apt-get autoremove -y \
     && apt-get autoclean -y \
    #&& rm -rf /var/cache/apt/* /var/lib/apt/lists/* /tmp/* /var/tmp/* \
    #&& /sbin/install_clean
