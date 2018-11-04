@@ -7,5 +7,5 @@ cp /root/R7800/4.9_qcom-ipq8065-r7800.dts /home/NETGEAR/r7800/target/linux/ipq80
 #构建配置
 cd /home/NETGEAR/r7800
 
-#make download
+make download
 #make -j1 V=s
