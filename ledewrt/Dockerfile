@@ -28,7 +28,7 @@ RUN dpkg --add-architecture i386 \
        shtool tar zlib1g zlib1g-dev intltool autopoint libltdl-dev libelf1 gengetopt \
        mtd-utils sharutils u-boot-tools libstdc++5 xsltproc dos2unix tofrodos \
        device-tree-compiler gitk cmake autogen qemu p7zip p7zip-full build-essential \
-       asciidoc binutils libncurses5-dev libz-dev patch unzip lib32gcc1 libc6-dev-i386 
+       asciidoc binutils libncurses5-dev libz-dev patch unzip lib32gcc1 libc6-dev-i386 \
        subversion flex uglifyjs git-core msmtp texinfo libglib2.0-dev xmlto qemu-utils \
 
     && apt-get autoremove -y \
