@@ -20,7 +20,7 @@ COPY PUBLICssh/known_hosts /root/known_hosts
 
 RUN dpkg --add-architecture i386 \
     && apt-get update -y \
-    && apt-get install -y \
+    && apt-get install -y --no-install-recommends \
        sudo net-tools cron e2fsprogs wget vim openssl curl psmisc git heirloom-mailx \
        autoconf automake bison bzip2 bsdtar diffutils sed file g++ libslang2 gawk \
        gcc-multilib gettext gperf groff-base zsh libncurses5-dev libexpat1-dev libelf-dev \
